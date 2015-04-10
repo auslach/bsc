@@ -36,74 +36,120 @@
 
     -#%link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
 
-    %style{ href: "style.css", type: "text/css", rel: "stylesheet" }
+    %link{ href: "style.css", type: "text/css", rel: "stylesheet" }
     -#= javascript_include_tag  "all"
 
   %body
+    .overlay
     %header.header
-      %h1
-        DARE TO THINK BIGGER?
-      %h2
-        BRONCO STARTUP CHALLENGE 2015
-      %p
-        MAY 2ND, 07:00PM
-        %br
-        URSA MAJOR, CAL POLY POMONA
-      %a{href: '#', target: '_blank'}
-        REGISTER NOW
+      .container
+        %h1
+          DARE TO THINK BIGGER?
+        %h2
+          BRONCO STARTUP CHALLENGE 2015
+        %p
+          MAY 2ND, 07:00PM
+          %br
+          URSA MAJOR, CAL POLY POMONA
+        %a{href: '#', target: '_blank'}
+          REGISTER NOW
+
     %section.due-dates
-      %h3
-        IMPORTANT DUE DATES
-      %h4
-        KEEP THESE ON YOUR CALENDAR!
-      %dl
-        %dt
-          APRIL 24TH, 06:59PM
-        %dd
-          REGISTRATION CLOSES
-        %dt
-          APRIL 24TH, 07:00PM
-        %dd
-          PITCH PARTY @ BUILDING 162-1001
-        %dt
-          MAY 2ND, 11:59PM
-        %dd
-          BUSINESS PLANS DUE
-        %dt
-          MAY 14TH, 07:00PM
-        %dd
-          BRONCO STARTUP FINALE @ URSA MAJOR
+      .container
+        %h3.heading
+          IMPORTANT DUE DATES
+        %h4.subheading
+          KEEP THESE ON YOUR CALENDAR!
+        %dl
+          %dt
+            APRIL 24TH, 06:59PM
+          %dd
+            REGISTRATION CLOSES
+          %dt
+            APRIL 24TH, 07:00PM
+          %dd
+            PITCH PARTY @ BUILDING 162-1001
+          %dt
+            MAY 2ND, 11:59PM
+          %dd
+            BUSINESS PLANS DUE
+          %dt
+            MAY 14TH, 07:00PM
+          %dd
+            BRONCO STARTUP FINALE @ URSA MAJOR
 
     %section.prizes
-      %h3
-        PRIZES
-      %h4
-        CLEVER SUB HEADING HERE
-      %dl
-        %dt
-          1ST PLACE
-        %dd
-          $4,000
-        %dt
-          2ND PLACE
-        %dd
-          $3,000
-        %dt
-          3RD PLACE
-        %dd
-          $2,000
-        %dt
-          BONUS: CROWD FAVORITE
-        %dd
-          $1,000
+      .container
+        %h3.heading
+          PRIZES
+        %h4.subheading
+          CLEVER SUB HEADING HERE
+        %dl
+          %dt
+            1ST PLACE
+          %dd
+            $4,000
+          %dt
+            2ND PLACE
+          %dd
+            $3,000
+          %dt
+            3RD PLACE
+          %dd
+            $2,000
+          %dt
+            BONUS: CROWD FAVORITE
+          %dd
+            $1,000
 
     %section.faqs
-      %h3
-        FREQUENTLY ASKED QUESTIONS
-      %h4
-        IN CASE YOU'RE CONFUSED ABOUT SOMETHING..
+      .container
+        %h3.heading
+          FREQUENTLY ASKED QUESTIONS
+        %h4.subheading
+          IN CASE YOU'RE CONFUSED ABOUT SOMETHING..
+        %dl.faq-items
+          .faq-item
+            %dt.question
+              Lorem ipsum lorem ipsum?
+            %dd.answer
+              Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          .faq-item
+            %dt.question
+              Lorem ipsum lorem ipsum?
+            %dd.answer
+              Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          .faq-item
+            %dt.question
+              Lorem ipsum lorem ipsum?
+            %dd.answer
+              Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          .faq-item
+            %dt.question
+              Lorem ipsum lorem ipsum?
+            %dd.answer
+              Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          .faq-item
+            %dt.question
+              Lorem ipsum lorem ipsum?
+            %dd.answer
+              Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          .faq-item
+            %dt.question
+              Lorem ipsum lorem ipsum?
+            %dd.answer
+              Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
     %footer.organized-by
-      %h3
-        ORGANIZED BY
-      %img{src: 'img/cba.png'}
-      %img{src: 'img/polyfounders.png'}
+      .container
+        %h3.heading
+          ORGANIZED BY
+        %img{src: 'img/cba.png', alt: 'CPP CBA Logo'}
+        %img{src: 'img/polyfounders.png', alt: 'Polyfounders Logo'}
+        .credit
+          %p
+            SITE BY:
+            %a{href: 'http://www.austinlchang.com', target: '_blank'}
+              AUSTIN CHANG
+            | SOURCE CODE:
+            %a{href: 'http://github.com/', target: '_blank'}
+              GITHUB
