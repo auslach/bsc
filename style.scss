@@ -1,6 +1,8 @@
 /*.header, dl, dt, dd, section, .container, footer, div, span, h3, h4 { border: 1px solid black; }*/
 
-$bsc-green: #515151;
+$bsc-green: #007540;
+$bsc-green-hover: #008F4E;
+$bsc-grey: #515151;
 $bebas-neue: 'Bebas-Neue', sans-serif;
 $bebas-neue-bold: 'Bebas-Neue-Bold', sans-serif;
 $bebas-neue-light: 'Bebas-Neue-Light', sans-serif;
@@ -44,20 +46,6 @@ header, section, footer {
   margin: 0 auto;
   background: rgba(0,0,0,0.5);
 }
-.header {
-  width: 100vw;
-  height: 100vh;
-  background: #FFFFFF url('img/bg.jpg') no-repeat center center / cover;
-  /*filter: blur(0.25em);*/
-  /*-webkit-filter: blur(0.25em);*/
-  /*-moz-filter: blur(0.25em);*/
-  /*-o-filter: blur(0.25em);*/
-  /*-ms-filter: blur(0.25em);*/
-  /*margin: -0.1em;*/
-  /*padding: -0.1em;*/
-  .container {
-  }
-}
 body {
   margin: 0;
   padding: 0;
@@ -76,6 +64,50 @@ body {
     margin-top: -2em;
     font-size: 1.5em;
     font-family: $bebas-neue-light;
+  }
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF url('img/bg.jpg') no-repeat center center / cover;
+  color: white;
+  /*filter: blur(0.25em);*/
+  /*-webkit-filter: blur(0.25em);*/
+  /*-moz-filter: blur(0.25em);*/
+  /*-o-filter: blur(0.25em);*/
+  /*-ms-filter: blur(0.25em);*/
+  /*margin: -0.1em;*/
+  /*padding: -0.1em;*/
+  .header-content {
+    margin-top: 30vh;
+    h1 {
+      font-size: 5em;
+    }
+    h2 {
+      font-family: $open-sans;
+      font-weight: 400;
+      margin-top: -2em;
+    }
+    p {
+      font-family: $lato;
+      font-weight: 400;
+      margin-top: 3em;
+      font-size: 1.5em;
+    }
+    a {
+      font-family: $open-sans;
+      font-size: 1.5em;
+      color: white;
+      background-color: $bsc-green;
+      text-decoration: none;
+      /*padding: 0.5em 1.5em 0.5em 1.5em;*/
+      padding: 0.5em 2em 0.5em 2em;
+      display: inline-block;
+      border-radius: 0.5em;
+      &:hover {
+        background-color: $bsc-green-hover;
+      }
+    }
   }
 }
 .due-dates, .prizes {
@@ -108,7 +140,7 @@ body {
   }
 }
 .prizes {
-  background-color: #007540;
+  background-color: $bsc-green;
   color: white;
 }
 .faqs {

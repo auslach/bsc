@@ -36,18 +36,6 @@ header, section, footer {
   margin: 0 auto;
   background: rgba(0, 0, 0, 0.5); }
 
-.header {
-  width: 100vw;
-  height: 100vh;
-  background: #FFFFFF url("img/bg.jpg") no-repeat center center/cover;
-  /*filter: blur(0.25em);*/
-  /*-webkit-filter: blur(0.25em);*/
-  /*-moz-filter: blur(0.25em);*/
-  /*-o-filter: blur(0.25em);*/
-  /*-ms-filter: blur(0.25em);*/
-  /*margin: -0.1em;*/
-  /*padding: -0.1em;*/ }
-
 body {
   margin: 0;
   padding: 0; }
@@ -63,6 +51,44 @@ body {
     margin-top: -2em;
     font-size: 1.5em;
     font-family: "Bebas-Neue-Light", sans-serif; }
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF url("img/bg.jpg") no-repeat center center/cover;
+  color: white;
+  /*filter: blur(0.25em);*/
+  /*-webkit-filter: blur(0.25em);*/
+  /*-moz-filter: blur(0.25em);*/
+  /*-o-filter: blur(0.25em);*/
+  /*-ms-filter: blur(0.25em);*/
+  /*margin: -0.1em;*/
+  /*padding: -0.1em;*/ }
+  .header .header-content {
+    margin-top: 30vh; }
+    .header .header-content h1 {
+      font-size: 5em; }
+    .header .header-content h2 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      margin-top: -2em; }
+    .header .header-content p {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      margin-top: 3em;
+      font-size: 1.5em; }
+    .header .header-content a {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5em;
+      color: white;
+      background-color: #007540;
+      text-decoration: none;
+      /*padding: 0.5em 1.5em 0.5em 1.5em;*/
+      padding: 0.5em 2em 0.5em 2em;
+      display: inline-block;
+      border-radius: 0.5em; }
+      .header .header-content a:hover {
+        background-color: #008F4E; }
 
 .due-dates dl, .prizes dl {
   position: relative;
