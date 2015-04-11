@@ -37,11 +37,13 @@
     -#%link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
 
     %link{ href: "style.css", type: "text/css", rel: "stylesheet" }
+    %script{src: 'https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js'}
     -#= javascript_include_tag  "all"
 
   %body
     .overlay
-    %header.header
+    -#%canvas.trianglify
+    %header.header#header
       .container
         .header-content
           %h1
@@ -52,7 +54,7 @@
             MAY 2ND, 07:00PM
             %br
             URSA MAJOR, CAL POLY POMONA
-          %a{href: '#', target: '_blank'}
+          %a{href: 'https://polyfounders.typeform.com/to/OVSnwo', target: '_blank'}
             REGISTER NOW
 
     %section.due-dates
@@ -89,19 +91,19 @@
           %dt
             1ST PLACE
           %dd
-            $4,000
+            $4,000 cash
           %dt
             2ND PLACE
           %dd
-            $3,000
+            $3,000 cash
           %dt
             3RD PLACE
           %dd
-            $2,000
+            $2,000 cash
           %dt
             BONUS: CROWD FAVORITE
           %dd
-            $1,000
+            $1,000 cash
 
     %section.faqs
       .container
@@ -156,3 +158,18 @@
             | SOURCE CODE:
             %a{href: 'http://github.com/', target: '_blank'}
               GITHUB
+    :javascript
+      function setBg() {
+        var pattern = Trianglify({
+          height: document.getElementById('header').offsetHeight,
+          width: document.getElementById('header').offsetWidth,
+          x_colors: 'YlGn'
+        });
+        document.getElementById('header').style.background = 'url(' + pattern.png() + ')'
+      }
+
+      setBg();
+
+      window.addEventListener('resize', function (event) {
+        setBg();
+      });

@@ -30,10 +30,11 @@
     <meta content='/images/ico/ms-icon-144x144.png' name='msapplication-TileImage'>
     <meta content='#ffffff' name='theme-color'>
     <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js'></script>
   </head>
   <body>
     <div class='overlay'></div>
-    <header class='header'>
+    <header class='header' id='header'>
       <div class='container'>
         <div class='header-content'>
           <h1>
@@ -47,7 +48,7 @@
             <br>
             URSA MAJOR, CAL POLY POMONA
           </p>
-          <a href='#' target='_blank'>
+          <a href='https://polyfounders.typeform.com/to/OVSnwo' target='_blank'>
             REGISTER NOW
           </a>
         </div>
@@ -102,25 +103,25 @@
             1ST PLACE
           </dt>
           <dd>
-            $4,000
+            $4,000 cash
           </dd>
           <dt>
             2ND PLACE
           </dt>
           <dd>
-            $3,000
+            $3,000 cash
           </dd>
           <dt>
             3RD PLACE
           </dt>
           <dd>
-            $2,000
+            $2,000 cash
           </dd>
           <dt>
             BONUS: CROWD FAVORITE
           </dt>
           <dd>
-            $1,000
+            $1,000 cash
           </dd>
         </dl>
       </div>
@@ -210,5 +211,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      function setBg() {
+        var pattern = Trianglify({
+          height: document.getElementById('header').offsetHeight,
+          width: document.getElementById('header').offsetWidth,
+          x_colors: 'YlGn'
+        });
+        document.getElementById('header').style.background = 'url(' + pattern.png() + ')'
+      }
+      
+      setBg();
+      
+      window.addEventListener('resize', function (event) {
+        setBg();
+      });
+    </script>
   </body>
 </html>

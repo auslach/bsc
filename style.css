@@ -55,7 +55,7 @@ body {
 .header {
   width: 100vw;
   height: 100vh;
-  background: #FFFFFF url("img/bg.jpg") no-repeat center center/cover;
+  /*background: #FFFFFF url('img/bg.jpg') no-repeat center center / cover;*/
   color: white;
   /*filter: blur(0.25em);*/
   /*-webkit-filter: blur(0.25em);*/
@@ -67,11 +67,12 @@ body {
   .header .header-content {
     margin-top: 30vh; }
     .header .header-content h1 {
-      font-size: 5em; }
+      font-size: 6em; }
     .header .header-content h2 {
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
-      margin-top: -2em; }
+      margin-top: -2em;
+      font-size: 2em; }
     .header .header-content p {
       font-family: "Lato", sans-serif;
       font-weight: 400;
