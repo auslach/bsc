@@ -17,14 +17,6 @@ $open-sans: 'Open Sans', sans-serif;
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
-.white {
-  color: white;
-}
-
-.black {
-  color: black;
-}
-
 header, section, footer {
   width: 100vw;
 }
@@ -44,7 +36,7 @@ header, section, footer {
   top: 0;
   left: 0;
   margin: 0 auto;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.4);
 }
 body {
   margin: 0;
@@ -69,39 +61,51 @@ body {
 .header {
   width: 100vw;
   height: 100vh;
-  /*background: #FFFFFF url('img/bg.jpg') no-repeat center center / cover;*/
   color: white;
-  /*filter: blur(0.25em);*/
-  /*-webkit-filter: blur(0.25em);*/
-  /*-moz-filter: blur(0.25em);*/
-  /*-o-filter: blur(0.25em);*/
-  /*-ms-filter: blur(0.25em);*/
-  /*margin: -0.1em;*/
-  /*padding: -0.1em;*/
   .header-content {
-    margin-top: 30vh;
-    h1 {
-      font-size: 6em;
+    @media only screen and (min-width: 414px) {
+      margin-top: 30vh;
+      h1 {
+        font-size: 6em;
+      }
+      h2 {
+        font-family: $open-sans;
+        font-weight: 400;
+        margin-top: -2em;
+        margin-bottom: 3em;
+        font-size: 2em;
+      }
+      p {
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 1.5em;
+      }
     }
-    h2 {
-      font-family: $open-sans;
-      font-weight: 400;
-      margin-top: -2em;
-      font-size: 2em;
-    }
-    p {
-      font-family: $lato;
-      font-weight: 400;
-      margin-top: 3em;
-      font-size: 1.5em;
+    @media only screen and (max-width: 414px) {
+      margin-top: 0;
+      h1 {
+        font-size: 4em;
+      }
+      h2 {
+        font-family: $open-sans;
+        font-weight: 400;
+        margin-top: -1em;
+        margin-bottom: 1.5em;
+        font-size: 1.75em;
+      }
+      p {
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 1.2em;
+      }
     }
     a {
       font-family: $open-sans;
       font-size: 1.5em;
       color: white;
       background-color: $bsc-green;
+      border: 0.125em solid white;
       text-decoration: none;
-      /*padding: 0.5em 1.5em 0.5em 1.5em;*/
       padding: 0.5em 2em 0.5em 2em;
       display: inline-block;
       border-radius: 0.5em;
@@ -199,7 +203,7 @@ body {
   background-color: #D9D9D9;
   color: black;
   img {
-    max-width: 25em;
+    max-width: 15em;
     margin: 0 auto;
     display: block;
   }
