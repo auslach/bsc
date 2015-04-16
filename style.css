@@ -80,6 +80,8 @@ body {
         font-family: "Lato", sans-serif;
         font-weight: 400;
         font-size: 1.2em; } }
+  .header .header-content h3 {
+    font-family: "Open Sans", sans-serif; }
   .header .header-content a {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5em;
