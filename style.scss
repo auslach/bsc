@@ -205,10 +205,18 @@ body {
 .organized-by {
   background-color: #D9D9D9;
   color: black;
+  .organizers {
+    margin-bottom: 3em;
+  }
   img {
-    max-width: 15em;
     margin: 0 auto;
     display: block;
+  }
+  .lg-logo {
+    width: 15em;
+  }
+  .sm-logo {
+    width: 7.5em;
   }
   .credit {
     font-family: $bebas-neue;

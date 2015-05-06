@@ -161,10 +161,15 @@ body {
 .organized-by {
   background-color: #D9D9D9;
   color: black; }
+  .organized-by .organizers {
+    margin-bottom: 3em; }
   .organized-by img {
-    max-width: 15em;
     margin: 0 auto;
     display: block; }
+  .organized-by .lg-logo {
+    width: 15em; }
+  .organized-by .sm-logo {
+    width: 7.5em; }
   .organized-by .credit {
     font-family: "Bebas-Neue", sans-serif;
     text-decoration: none;
